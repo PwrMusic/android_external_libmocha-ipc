@@ -1,4 +1,4 @@
-
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),wave)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -184,3 +184,4 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libsrs-client
 
 include $(BUILD_SHARED_LIBRARY)
+endif
